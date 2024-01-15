@@ -2,7 +2,7 @@
     <h1 style="text-align: center;">會員登入</h1>
 </header>
 <div>
-    <table style="margin: auto;padding: 80px 0;border-collapse:none;">
+    <table style="margin: auto;padding: 80px 0;">
         <tr>
             <td>帳號</td>
             <td><input type="text" name="acc" id="acc"></td>

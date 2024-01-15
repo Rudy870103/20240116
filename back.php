@@ -11,7 +11,7 @@
     <script src="./js/jquery-1.9.1min.js"></script>
 	<script src="./js/js.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <title>Welcome to AniMate</title>
+    <title>AniMate</title>
 </head>
 <body>
     <div class="container-fluid">
@@ -21,7 +21,7 @@
                 <span>勇敢並不是什麼都不怕，而是即使恐懼，仍勇往直前</span>
             </div>
             <div class="header-main" style="display: flex;justify-content: space-between; border-top: 1px solid black;border-bottom: 1px solid black;  margin-top: 8px;padding: 20px 0;">
-                <a href="./index.php"><img src="./icon/logo.png" alt="AniMate" width="210" height="100%"></a>
+                <a href="./index.php" style="text-decoration: none;"><img src="./icon/logo.png" alt="AniMate" width="210" height="100%"><span style="font-size: 60px; color:#1f1f1f">Animate</span></a>
                 <div class="header-info" style="display: flex;border-left: 1px solid black;padding-left: 20px;">
                     <a href="#" class="text-decoration-none"><span>快來感受貓咪的吸引力</span></a>
                     <div class="header-info-date">
@@ -37,16 +37,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">品牌起源</a>
+                                <a class="nav-link" href="?do=admin">會員管理</a>
                             </li>
                             <li class=" nav-item">
-                                    <a class="nav-link" href="#">動畫作品</a>
+                                    <a class="nav-link" href="?do=motto">座右銘管理</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">新聞</a>
+                                <a class="nav-link" href="?do=news">新聞管理</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">日常撮影</a>
+                                <a class="nav-link" href="?do=photography">日常撮影管理</a>
                             </li>
                         </ul>
                     </div>
@@ -62,11 +62,11 @@
                     ?>
                     <div class="d-flex justify-content-end" style="width:250px">
                         歡迎,<?= $_SESSION['user']; ?>&nbsp
-                        <button class="login-btn" onclick="location.href='./api/logout.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8">登出</button>
+                        <button class="login-btn" onclick="location.href='./api/logout.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">登出</button>
                         <?php
                         if ($_SESSION['user'] == 'admin') {
                         ?>
-                            <button class="login-btn" onclick="location.href='back.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8">管理</button>
+                            <button class="login-btn" onclick="location.href='back.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">管理</button>
                     <?php
                         }
                         ?>
