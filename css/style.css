@@ -1,0 +1,35 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Noto Serif TC', serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+header {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.nav-link:hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.login a {
+    color: black;
+}
+
+.login a:hover {
+    font-weight: bold;
+    color: rgb(255, 153, 0);
+    text-shadow: 2px 0px 1px black;
+}
+.login-btn:hover{
+    background-color:#1f1f1f !important;
+    color: #f8f8f8;
+}
