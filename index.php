@@ -37,16 +37,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#"">品牌起源</a>
+                                <a class="nav-link" href="?do=aboutus">品牌起源</a>
                             </li>
                             <li class=" nav-item">
-                                    <a class="nav-link" href="#">動畫作品</a>
+                                    <a class="nav-link" href="?do=animate">動畫作品</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">新聞</a>
+                                <a class="nav-link" href="?do=news">新聞</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">日常撮影</a>
+                                <a class="nav-link" href="?do=photography">日常撮影</a>
                             </li>
                         </ul>
                     </div>
