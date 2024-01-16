@@ -4,20 +4,26 @@
 <div>
     <table style="margin: auto;padding: 80px 0;">
         <tr>
-            <td>帳號</td>
-            <td><input type="text" name="acc" id="acc"></td>
+            <td class="text-end">帳號 : &nbsp</td>
+            <td><input type="text" name="acc" id="acc" style="background-color:#f8f8f8;border:1px solid #1f1f1f"></td>
         </tr>
         <tr>
-            <td>密碼</td>
-            <td><input type="password" name="pw" id="pw"></td>
+            <td class="text-end">密碼 : &nbsp</td>
+            <td><input type="password" name="pw" id="pw" style="background-color:#f8f8f8;border:1px solid #1f1f1f"></td>
         </tr>
         <tr>
-            <td>
-                <input type="button" value="登入" onclick="login()">
-                <input type="reset" value="清除" onclick="clean()">
+            <td></td>
+            <td class="text-center">
+                <br>
+                <input class="login-btn" type="button" value="登入" onclick="login()">
+                <input class="login-btn" type="reset" value="清除" onclick="clean()">
             </td>
-            <td>
-                <a href="?do=forget">忘記密碼</a> | <a href="?do=reg">尚未註冊</a>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="text-center">
+                <br>
+                <a href="?do=forget" class="forget">忘記密碼</a> | <a href="?do=reg" class="forget">尚未註冊</a>
             </td>
         </tr>
     </table>

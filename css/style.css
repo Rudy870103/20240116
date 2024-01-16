@@ -29,7 +29,21 @@ header {
     color: rgb(255, 153, 0);
     text-shadow: 2px 0px 1px #1f1f1f;
 }
+
+.login-btn{
+    background-color:#f8f8f8;
+    border:1px solid #1f1f1f;
+    border-radius: 10%;
+}
 .login-btn:hover{
     background-color:#1f1f1f !important;
     color: #f8f8f8;
+}
+
+.forget{
+    text-decoration: none;
+    color: #1f1f1f;
+}
+.forget:hover{
+    text-decoration:underline
 }
