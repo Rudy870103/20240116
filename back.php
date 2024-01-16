@@ -18,7 +18,7 @@
         <!-- header -->
         <header>
             <div class="header-motto" style="border-bottom: 2px solid black; padding-bottom: 8px;font-size: 12px;">
-                <span>勇敢並不是什麼都不怕，而是即使恐懼，仍勇往直前</span>
+            <span><?php $motto=$Motto->find(['sh'=>1]); echo $motto['text'];?></span>
             </div>
             <div class="header-main" style="display: flex;justify-content: space-between; border-top: 1px solid black;border-bottom: 1px solid black;  margin-top: 8px;padding: 20px 0;">
                 <a href="./index.php" style="text-decoration: none;"><img src="./icon/logo.png" alt="AniMate" width="210" height="100%"><span style="font-size: 60px; color:#1f1f1f">Animate</span></a>

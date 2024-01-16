@@ -12,9 +12,10 @@
         ?>
                 <tr style="height:40px">
                     <td style="border: 1px solid #1f1f1f;"><?= $row['text']; ?></td>
-                    <td style="border: 1px solid #1f1f1f;"><input type="radio" name="sh" id="sh"></td>
+                    <td style="border: 1px solid #1f1f1f;"><input type="radio" name="sh[]" value="<?=$row['id'];?>" <?=($row['sh']==1)?'checked':'';?>></td>
                     <td style="border: 1px solid #1f1f1f;">
                         <input type="checkbox" name="del[]" value="<?= $row['id']; ?>">
+                        <input type="hidden" name="id[]" value="<?=$row['id'];?>">
                     </td>
                 </tr>
         <?php
@@ -57,7 +58,7 @@
             text: $("#text").val()
         }
         if(motto.text != ''){
-            $.post("./api/edit_motto.php",motto,(res)=>{
+            $.post("./api/add_motto.php",motto,(res)=>{
                 location.reload();
             })
         }else{
