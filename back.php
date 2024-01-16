@@ -43,7 +43,7 @@
                                     <a class="nav-link" href="?do=motto">座右銘管理</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="?do=news">新聞管理</a>
+                                <a class="nav-link" href="?do=news">文章管理</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="?do=photography">日常撮影管理</a>

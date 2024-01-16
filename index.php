@@ -43,7 +43,7 @@
                                     <a class="nav-link" href="?do=animate">動畫作品</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="?do=news">新聞</a>
+                                <a class="nav-link" href="?do=news">最新文章</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="?do=photography">日常撮影</a>
