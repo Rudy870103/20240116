@@ -1,0 +1,1 @@
+<h1 class="text-center mt-5">新聞管理</h1>

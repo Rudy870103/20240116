@@ -17,7 +17,7 @@
     <div class="container-fluid">
         <!-- header -->
         <header>
-            <div class="header-motto" style="border-bottom: 2px solid black; padding-bottom: 8px;font-size: 12px;">
+            <div class="header-motto" style="border-bottom: 2px solid black; padding-bottom: 8px;font-size: 16px;">
                 <span><?php $motto=$Motto->find(['sh'=>1]); echo $motto['text'];?></span>
             </div>
             <div class="header-main" style="display: flex;justify-content: space-between; border-top: 1px solid black;border-bottom: 1px solid black;  margin-top: 8px;padding: 20px 0;">

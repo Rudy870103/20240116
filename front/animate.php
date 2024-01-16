@@ -7,7 +7,10 @@
         color:#f8f8f8;
     }
 </style>
-<div style="width: 80%;margin:auto;padding-top:80px;">
+<header style="padding: 80px 0;">
+    <h1 style="text-align: center;">動畫作品</h1>
+</header>
+<div style="width: 80%;margin:auto;">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="sea-tab" data-bs-toggle="tab" data-bs-target="#sea" type="button" role="tab" aria-controls="sea" aria-selected="true">海洋</button>
