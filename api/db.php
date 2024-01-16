@@ -142,6 +142,6 @@ function to($url){
 }
 
 $User=new DB('user');
-
+$Motto=new DB('motto');
 
 ?>
