@@ -5,7 +5,7 @@
     <button class="mb-5 login-btn" onclick="location.href='?do=add_news'">新增文章</button>
 </div>
 <?php
-$news=$News->all();
+$news=$News->all("order by id desc");
 foreach($news as $idx => $new){
 ?>
 
