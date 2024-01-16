@@ -48,6 +48,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="?do=photography">日常撮影</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="?do=vote">主題票選</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
