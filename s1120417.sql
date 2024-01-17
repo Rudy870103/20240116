@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2024-01-17 09:10:02
+-- 產生時間： 2024-01-17 21:30:02
 -- 伺服器版本： 10.4.28-MariaDB
 -- PHP 版本： 8.2.4
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- 資料庫： `s1120417`
+-- 資料庫： `animate`
 --
 
 -- --------------------------------------------------------
@@ -54,18 +54,25 @@ CREATE TABLE `news` (
   `img` text NOT NULL,
   `title` text NOT NULL,
   `news` text NOT NULL,
-  `sh` int(1) NOT NULL
+  `sh` int(1) NOT NULL,
+  `rank` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- 傾印資料表的資料 `news`
 --
 
-INSERT INTO `news` (`id`, `img`, `title`, `news`, `sh`) VALUES
-(1, 'newslist.png', '首篇文章測試', '希望成功!', 1),
-(2, 'slide-1o.jpg', '測試第二次', '要成功啊啊啊', 1),
-(4, 'DSC_6044.JPG', '我們家阿胖', '最愛在窗邊學鳥叫', 1),
-(5, 'DSC_6722.JPG', '我們家阿咪', '完全沒有老態', 1);
+INSERT INTO `news` (`id`, `img`, `title`, `news`, `sh`, `rank`) VALUES
+(19, 'DSC_6726.JPG', '明明很怕路人', '卻總是在他們接近時好奇跑去看', 1, 20),
+(20, 'DSC_6294.JPG', '兩個好奇寶寶', '看多久都不無聊欸', 1, 1),
+(21, 'DSC_6257.JPG', '再玩啊', '看我等等怎麼教訓你', 1, 21),
+(22, 'DSC_6226.JPG', '別看他白得像天使', '調皮的跟惡魔一樣', 1, 22),
+(23, 'DSC_6047.JPG', '喜歡看窗外的你', '甚至還會學鳥叫', 1, 23),
+(24, 'DSC_6278.JPG', '睏嘎安內', '奪愛睡', 1, 24),
+(25, 'DSC_4644.JPG', '忙碌的背影', '始終迷人', 1, 25),
+(26, 'DSC_4640.JPG', '萬紫叢中一點黃', '神作啊(自己說', 1, 26),
+(27, '202154_210504_1.jpg', '就你這個好奇寶寶', '「在幹嘛?」', 1, 28),
+(28, '202154_210504_8.jpg', '有著成熟眼神的你', '總是這樣看著遠方', 1, 27);
 
 -- --------------------------------------------------------
 
@@ -159,7 +166,7 @@ ALTER TABLE `vote`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `user`
