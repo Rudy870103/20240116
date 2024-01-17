@@ -5,7 +5,11 @@ if(!empty($_FILES['img']['tmp_name'])){
     $_POST['img']=$_FILES['img']['name'];
 }
 
-$news=$_POST+['sh'=>1];
+if(!isset($_POST['id'])){
+    $_POST['sh']=1;
+    $_POST['rank']=$News->max('id')+1;
+}
 
-$News->save($news);
+
+$News->save($_POST);
 to("../back.php?do=news");
