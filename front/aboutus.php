@@ -25,14 +25,18 @@
     }
 </style>
 <header style="padding: 80px 0;">
-    <h1 style="text-align: center;">品牌起源</h1>
+    <h1 style="text-align: center;font-weight:700">品牌起源<span style="display: block;font-size:16px;margin-top:10px">About us</span></h1>
 </header>
 
-<main>
-    <div class="logo mb-5" style="width: 80%;height:500px;margin:auto;">
+<main style="width: 80%;height:500px;margin:auto;">
+    <div class="logo mb-5" style="height: 500px;">
         <div class="cover"><img src="./icon/cover.png" alt="" height="500px"></div>
     </div>
     <article>
-        <h3 class="text-center">我們所經歷的每件事，看似豪不相關，但當換個角度看，其實我們正勇往直前</h3>
+        <div class="text-center">
+            <h3 class="text-center" style="display: inline-block;">我們所經歷的每件事，看似毫不相關，但當換個角度看，其實我們正勇往直前</h3>
+            <p style="display: inline-block;">—我說的</p>
+        </div>
+
     </article>
 </main>

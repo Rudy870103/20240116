@@ -1,6 +1,6 @@
 <main>
     <!-- carousel -->
-    <section style="margin-top: 60px;">
+    <section style="padding-top: 60px;width:80%;margin:auto">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -11,19 +11,19 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./img/carousel1.png" class="d-block w-100" alt="...">
+                    <img src="./img/DSC_6044.JPG" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/carousel2.png" class="d-block w-100" alt="...">
+                    <img src="./img/DSC_6722.JPG" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/carousel3.png" class="d-block w-100" alt="...">
+                    <img src="./img/DSC_6044.JPG" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/carousel4.png" class="d-block w-100" alt="...">
+                    <img src="./img/DSC_6722.JPG" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/carousel5.png" class="d-block w-100" alt="...">
+                    <img src="./img/DSC_6044.JPG" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

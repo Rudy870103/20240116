@@ -8,7 +8,7 @@
     }
 </style>
 <header style="padding: 80px 0;">
-    <h1 style="text-align: center;">動畫作品</h1>
+<h1 style="text-align: center;font-weight:700">動畫作品<span style="display: block;font-size:16px;margin-top:10px">Animate works</span></h1>
 </header>
 <div style="width: 80%;margin:auto;">
     <ul class="nav nav-tabs" id="myTab" role="tablist">

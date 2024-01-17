@@ -1,5 +1,5 @@
 <header style="padding: 80px 0;">
-<h1 style="text-align: center;">忘記密碼</h1>
+<h1 style="text-align: center;font-weight:700">忘記密碼<span style="display: block;font-size:16px;margin-top:10px">Forget</span></h1>
 </header>
 <table class="mb-1" style="margin: auto;padding: 80px 0;">
     <h5 class="text-center mb-5">請出入帳號及信箱以查詢密碼</h5>

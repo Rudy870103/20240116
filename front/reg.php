@@ -1,5 +1,5 @@
 <header style="padding: 80px 0;">
-    <h1 style="text-align: center;">會員註冊</h1>
+<h1 style="text-align: center;font-weight:700">會員註冊<span style="display: block;font-size:16px;margin-top:10px">Join us</span></h1>
 </header>
 <div>
 <table style="margin: auto;padding: 80px 0;">

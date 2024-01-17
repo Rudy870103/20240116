@@ -13,15 +13,65 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>AniMate</title>
 </head>
+<style>
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 40%;
+        right: 5%;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgb(105, 105, 105,0.8) ;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    #myBtn:hover {
+        background-color: #555;
+    }
+</style>
+
 <body>
+    <!-- go to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- go to top button end -->
     <div class="container-fluid">
         <!-- header -->
         <header>
             <div class="header-motto" style="border-bottom: 2px solid black; padding-bottom: 8px;font-size: 16px;">
-                <span><?php $motto=$Motto->find(['sh'=>1]); echo $motto['text'];?></span>
+                <span><?php $motto = $Motto->find(['sh' => 1]);
+                        echo $motto['text']; ?></span>
             </div>
             <div class="header-main" style="display: flex;justify-content: space-between; border-top: 1px solid black;border-bottom: 1px solid black;  margin-top: 8px;padding: 20px 0;">
-            <a href="./index.php" style="text-decoration: none;"><img src="./icon/logo.png" alt="AniMate" width="210" height="100%"><span style="font-size: 60px; color:#1f1f1f">Animate</span></a>
+                <a href="./index.php" style="text-decoration: none;"><img src="./icon/logo.png" alt="AniMate" width="210" height="100%"><span style="font-size: 60px; color:#1f1f1f">Animate</span></a>
                 <div class="header-info" style="display: flex;border-left: 1px solid black;padding-left: 20px;">
                     <a href="#" class="text-decoration-none"><span>快來感受貓咪的吸引力</span></a>
                     <div class="header-info-date">
@@ -37,10 +87,13 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
+                                <a class="nav-link" href="?do=main">首頁</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="?do=aboutus">品牌起源</a>
                             </li>
                             <li class=" nav-item">
-                                    <a class="nav-link" href="?do=animate">動畫作品</a>
+                                <a class="nav-link" href="?do=animate">動畫作品</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="?do=news">最新文章</a>
@@ -54,7 +107,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="login" >
+                <div class="login">
                     <?php
                     if (!isset($_SESSION['user'])) {
                     ?>
@@ -63,19 +116,19 @@
                     <?php
                     } else {
                     ?>
-                    <div class="d-flex justify-content-end" style="width:250px">
-                        歡迎,<?= $_SESSION['user']; ?>&nbsp
-                        <button class="login-btn" onclick="location.href='./api/logout.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">登出</button>
-                        <?php
-                        if ($_SESSION['user'] == 'admin') {
-                        ?>
-                            <button class="login-btn" onclick="location.href='back.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">管理</button>
+                        <div class="d-flex justify-content-end" style="width:250px">
+                            歡迎,<?= $_SESSION['user']; ?>&nbsp
+                            <button class="login-btn" onclick="location.href='./api/logout.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">登出</button>
+                            <?php
+                            if ($_SESSION['user'] == 'admin') {
+                            ?>
+                                <button class="login-btn" onclick="location.href='back.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">管理</button>
+                            <?php
+                            }
+                            ?>
+                        </div>
+
                     <?php
-                        }
-                        ?>
-                    </div>
-                        
-                        <?php
                     }
                     ?>
                 </div>
