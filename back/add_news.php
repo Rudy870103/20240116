@@ -5,7 +5,7 @@
 
     <table style="margin: auto;">
         <tr>
-            <td class="text-end">文章圖片 &nbsp&nbsp</td>
+            <td class="text-end">照片 &nbsp&nbsp</td>
             <td>
                 <input type="file" name="img" id="">
             </td>
@@ -15,7 +15,7 @@
             <td><input type="text" name="title" id=""></td>
         </tr>
         <tr>
-            <td class="text-end">文章內容 &nbsp&nbsp</td>
+            <td class="text-end">說明 &nbsp&nbsp</td>
             <td><textarea name="news" style="width:99%;height:100px;"></textarea></td>
         </tr>
     </table>

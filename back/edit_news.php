@@ -6,7 +6,7 @@
 
     <table style="margin: auto;">
         <tr>
-            <td class="text-end">文章圖片 &nbsp&nbsp</td>
+            <td class="text-end">照片 &nbsp&nbsp</td>
             <td><input type="file" name="img" value="<?= $news['img']; ?>"></td>
         </tr>
         <tr>
@@ -14,7 +14,7 @@
             <td><input type="text" name="title" value="<?= $news['title']; ?>"></td>
         </tr>
         <tr>
-            <td>文章內容 &nbsp&nbsp</td>
+            <td>說明 &nbsp&nbsp</td>
             <td><textarea name="news" style="width:99%;height:100px;"><?= $news['news']; ?></textarea></td>
         </tr>
     </table>

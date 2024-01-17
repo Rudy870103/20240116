@@ -2,7 +2,7 @@
 
 <div class="mt-5" style="width:80%;margin:auto">
 <div class="text-center pb-3" style="border-bottom: 1px solid #1f1f1f;">
-    <button class="mb-5 login-btn" onclick="location.href='?do=add_news'">新增文章</button>
+    <button class="mb-5 login-btn" onclick="location.href='?do=add_news'">新增照片</button>
 </div>
 <?php
 $news=$News->all("order by id desc");
