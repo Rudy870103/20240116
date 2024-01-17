@@ -1,4 +1,4 @@
-<?php include_once "./api/db.php" ;?>
+<?php include_once "./api/db.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,23 +9,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/jquery-1.9.1min.js"></script>
-	<script src="./js/js.js"></script>
+    <script src="./js/js.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>AniMate</title>
 </head>
+
 <body>
     <div class="container-fluid">
         <!-- header -->
         <header>
             <div class="header-motto" style="border-bottom: 2px solid black; padding-bottom: 8px;font-size: 16px;">
-            <span><?php $motto=$Motto->find(['sh'=>1]); echo $motto['text'];?></span>
+                <span><?php $motto = $Motto->find(['sh' => 1]);
+                        echo $motto['text']; ?></span>
             </div>
-            <div class="header-main" style="display: flex;justify-content: space-between; border-top: 1px solid black;border-bottom: 1px solid black;  margin-top: 8px;padding: 20px 0;">
-                <a href="./index.php" style="text-decoration: none;"><img src="./icon/logo.png" alt="AniMate" width="210" height="100%"><span style="font-size: 60px; color:#1f1f1f">Animate</span></a>
-                <div class="header-info" style="display: flex;border-left: 1px solid black;padding-left: 20px;">
-                    <a href="#" class="text-decoration-none"><span>快來感受貓咪的吸引力</span></a>
+            <div class="header-main" style="height:20vh;display: flex;justify-content: space-between; border-top: 1px solid black;border-bottom: 1px solid black;  margin-top: 8px;padding: 20px 0;overflow:hidden">
+                <div>
+                    <a href="./index.php" style="text-decoration: none;"><img src="./icon/logo.png" alt="AniMate" width="210" height="100%"></a>
+                </div>
+
+                <div class="header-info d-flex" style="border-left:1px solid #1f1f1f;padding-left:20px;">
+                    <div class="header-info-issue">
+                        <a href="?do=animate" class="text-decoration-none text-start" style="color:#1f1f1f;">快來看看這個網站最大賣點 >></a>
+                    </div>
+                    <div class="box" style="width: 250px;height:100px"></div>
                     <div class="header-info-date">
-                        2024/01/14
+                        <span style="font-size: 20px;font-family:serif;font-weight:700;position:absolute;right:21%;top:17%"><?= date('Y', strtotime('today')); ?></span>
+                        <span style="font-size: 50px;font-family:serif;font-weight:700;position:absolute;right:20%;top:23%"><?= date('M', strtotime('today')); ?></span>
+                        <span style="font-size: 135px;font-family:serif;font-weight:700;position:absolute;right:11%;top:10%"><?= date('d', strtotime('today')); ?></span>
                     </div>
                 </div>
             </div>
@@ -40,7 +50,7 @@
                                 <a class="nav-link" href="?do=admin">會員管理</a>
                             </li>
                             <li class=" nav-item">
-                                    <a class="nav-link" href="?do=motto">座右銘管理</a>
+                                <a class="nav-link" href="?do=motto">座右銘管理</a>
                             </li>
                             <!-- <li class="nav-item">
                                 <a class="nav-link" href="?do=news">文章管理</a>
@@ -54,7 +64,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="login" >
+                <div class="login">
                     <?php
                     if (!isset($_SESSION['user'])) {
                     ?>
@@ -63,19 +73,19 @@
                     <?php
                     } else {
                     ?>
-                    <div class="d-flex justify-content-end" style="width:250px">
-                        歡迎,<?= $_SESSION['user']; ?>&nbsp
-                        <button class="login-btn" onclick="location.href='./api/logout.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">登出</button>
-                        <?php
-                        if ($_SESSION['user'] == 'admin') {
-                        ?>
-                            <button class="login-btn" onclick="location.href='back.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">管理</button>
+                        <div class="d-flex justify-content-end" style="width:250px">
+                            歡迎,<?= $_SESSION['user']; ?>&nbsp
+                            <button class="login-btn" onclick="location.href='./api/logout.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">登出</button>
+                            <?php
+                            if ($_SESSION['user'] == 'admin') {
+                            ?>
+                                <button class="login-btn" onclick="location.href='back.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">管理</button>
+                            <?php
+                            }
+                            ?>
+                        </div>
+
                     <?php
-                        }
-                        ?>
-                    </div>
-                        
-                        <?php
                     }
                     ?>
                 </div>

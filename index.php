@@ -116,32 +116,30 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="login">
+                    <div class="login" >
+                    <?php
+                    if (!isset($_SESSION['user'])) {
+                    ?>
+                        <a href="?do=login" class="d-flex justify-content-end text-decoration-none" style="width:250px"><img src="./icon/login.png" alt="login" width="20px" height="100%">
+                            <span>&nbsp Login</span></a>
+                    <?php
+                    } else {
+                    ?>
+                    <div class="d-flex justify-content-end" style="width:250px">
+                        歡迎,<?= $_SESSION['user']; ?>&nbsp
+                        <button class="login-btn" onclick="location.href='./api/logout.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">登出</button>
                         <?php
-                        if (!isset($_SESSION['user'])) {
+                        if ($_SESSION['user'] == 'admin') {
                         ?>
-                            <a href="?do=login" class="text-decoration-none">
-                                <img src="./icon/login.png" alt="login" width="20px" height="20px">
-                                <span>&nbsp Login</span>
-                            </a>
-                        <?php
-                        } else {
-                        ?>
-                            <div class="d-flex justify-content-end" style="width:250px">
-                                歡迎,<?= $_SESSION['user']; ?>&nbsp
-                                <button class="login-btn" onclick="location.href='./api/logout.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">登出</button>
-                                <?php
-                                if ($_SESSION['user'] == 'admin') {
-                                ?>
-                                    <button class="login-btn" onclick="location.href='back.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">管理</button>
-                                <?php
-                                }
-                                ?>
-                            </div>
-
-                        <?php
+                            <button class="login-btn" onclick="location.href='back.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">管理</button>
+                    <?php
                         }
                         ?>
+                    </div>
+                        
+                        <?php
+                    }
+                    ?>
                     </div>
                 </div>
             </nav>

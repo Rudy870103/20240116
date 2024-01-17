@@ -13,18 +13,21 @@
                 <div class="carousel-item active">
                     <img src="./img/DSC_6044.JPG" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
-                    <img src="./img/DSC_6722.JPG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/DSC_6044.JPG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/DSC_6722.JPG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/DSC_6044.JPG" class="d-block w-100" alt="...">
-                </div>
+                <?php
+                $total = $News->count(" where `sh`=1");
+                $div = 4;
+                $pages = ceil($total / $div);
+                $now = $_GET['p'] ?? 1;
+                $start = ($now - 1) * $div;
+                $news = $News->all(" where `sh`=1 order by rank desc limit $start,$div");
+                foreach ($news as $new) {
+                ?>
+                    <div class="carousel-item">
+                        <img src="./img/<?=$new['img'];?>" class="d-block w-100" alt="...">
+                    </div>
+                <?php
+                }
+                ?>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
