@@ -4,8 +4,8 @@
 
 
 
-<table>
-    <tr>
+<table style="width:50%;margin: auto;border:1px solid #1f1f1f;text-align:center;font-size:20px">
+    <tr style="height: 50px;">
         <th width="10%">編號</th>
         <th width="60%">問卷題目</th>
         <th width="10%">投票總數</th>
@@ -16,12 +16,21 @@
     $vote=$Vote->all(['title_id'=>0]);
     foreach($vote as  $key => $vot){
     ?>
-    <tr>
+    <style>
+        a{
+            text-decoration: none;
+            color:#1f1f1f;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+    <tr style="height: 50px;border:1px solid #1f1f1f">
         <td><?=$key+1;?></td>
         <td><?=$vot['text'];?></td>
         <td><?=$vot['vote'];?></td>
         <td>
-            <a href='?do=result&id=<?=$vot['id'];?>'>結果</a>
+            <a href='?do=result&id=<?=$vot['id'];?>'>查看結果</a>
         </td>
         <td>
         <?php
