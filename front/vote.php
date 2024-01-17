@@ -17,11 +17,11 @@
     foreach($vote as  $key => $vot){
     ?>
     <style>
-        a{
+        .voteBtn{
             text-decoration: none;
             color:#1f1f1f;
         }
-        a:hover{
+        .voteBtn:hover{
             text-decoration: underline;
         }
     </style>
@@ -30,14 +30,14 @@
         <td><?=$vot['text'];?></td>
         <td><?=$vot['vote'];?></td>
         <td>
-            <a href='?do=result&id=<?=$vot['id'];?>'>查看結果</a>
+            <a class='voteBtn' href='?do=result&id=<?=$vot['id'];?>'>查看結果</a>
         </td>
         <td>
         <?php
         if(isset($_SESSION['user'])){
-            echo "<a href='?do=voting&id={$vot['id']}'>參與投票</a>";
+            echo "<a class='voteBtn' href='?do=voting&id={$vot['id']}'>參與投票</a>";
         }else{
-            echo "請先登入";
+            echo "<a class='voteBtn' href='?do=login'>請先登入</a>";
         }
 
         ?>

@@ -79,6 +79,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- navbar -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: 1px solid black;padding: 1px 0;">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,44 +97,47 @@
                             <li class=" nav-item">
                                 <a class="nav-link" href="?do=animate">動畫作品</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="?do=news">最新文章</a>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
-                                <a class="nav-link" href="?do=photography">日常撮影</a>
+                                <a class="nav-link" href="?do=news">日常撮影</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="?do=vote">主題票選</a>
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="login">
-                    <?php
-                    if (!isset($_SESSION['user'])) {
-                    ?>
-                        <a href="?do=login" class="d-flex justify-content-end text-decoration-none" style="width:250px"><img src="./icon/login.png" alt="login" width="20px" height="100%">
-                            <span>&nbsp Login</span></a>
-                    <?php
-                    } else {
-                    ?>
-                        <div class="d-flex justify-content-end" style="width:250px">
-                            歡迎,<?= $_SESSION['user']; ?>&nbsp
-                            <button class="login-btn" onclick="location.href='./api/logout.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">登出</button>
-                            <?php
-                            if ($_SESSION['user'] == 'admin') {
-                            ?>
-                                <button class="login-btn" onclick="location.href='back.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">管理</button>
-                            <?php
-                            }
-                            ?>
-                        </div>
-
-                    <?php
-                    }
-                    ?>
+                    <div class="login">
+                        <?php
+                        if (!isset($_SESSION['user'])) {
+                        ?>
+                            <a href="?do=login" class="text-decoration-none">
+                                <img src="./icon/login.png" alt="login" width="20px" height="20px">
+                                <span>&nbsp Login</span>
+                            </a>
+                        <?php
+                        } else {
+                        ?>
+                            <div class="d-flex justify-content-end" style="width:250px">
+                                歡迎,<?= $_SESSION['user']; ?>&nbsp
+                                <button class="login-btn" onclick="location.href='./api/logout.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">登出</button>
+                                <?php
+                                if ($_SESSION['user'] == 'admin') {
+                                ?>
+                                    <button class="login-btn" onclick="location.href='back.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">管理</button>
+                                <?php
+                                }
+                                ?>
+                            </div>
+    
+                        <?php
+                        }
+                        ?>
+                    </div>
                 </div>
             </nav>
+<!-- navbar end -->
 
         </header>
         <!-- header end -->

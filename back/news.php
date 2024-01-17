@@ -1,4 +1,4 @@
-<h1 class="text-center mt-5">文章管理</h1>
+<h1 class="text-center mt-5">日常撮影管理</h1>
 
 <div class="mt-5" style="width:80%;margin:auto">
 <div class="text-center pb-3" style="border-bottom: 1px solid #1f1f1f;">

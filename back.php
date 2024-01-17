@@ -42,11 +42,11 @@
                             <li class=" nav-item">
                                     <a class="nav-link" href="?do=motto">座右銘管理</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="?do=news">文章管理</a>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
-                                <a class="nav-link" href="?do=photography">日常撮影管理</a>
+                                <a class="nav-link" href="?do=news">日常撮影管理</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="?do=vote">主題票選管理</a>

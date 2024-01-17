@@ -1,4 +1,4 @@
-<h1 class="text-center mt-5">編輯文章</h1>
+<h1 class="text-center mt-5">編輯照片</h1>
 
 <?php $news = $News->find($_GET['id']); ?>
 <form action="./api/save_news.php" method="post" enctype="multipart/form-data">

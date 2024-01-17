@@ -1,4 +1,4 @@
-<h1 class="text-center mt-5 mb-5">新增文章</h1>
+<h1 class="text-center mt-5 mb-5">新增照片</h1>
 
 <form action="./api/save_news.php" method="post" enctype="multipart/form-data">
 

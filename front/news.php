@@ -1,5 +1,5 @@
 <header style="padding: 80px 0;">
-<h1 style="text-align: center;font-weight:700">最新文章<span style="display: block;font-size:16px;margin-top:10px">News</span></h1>
+<h1 style="text-align: center;font-weight:700">日常撮影<span style="display: block;font-size:16px;margin-top:10px">Photography</span></h1>
 </header>
 
 <main style="width: 80%;margin:auto">
@@ -14,9 +14,15 @@
         foreach($news as $new){
     ?>
         <article style="width: 30%;margin-bottom:20px">
-            <div><img src="./img/<?=$new['img'];?>" alt="" width="100%"></div>
-            <div><h3 class="mt-3" style="font-weight: 700;" ><?=$new['title'];?></h3></div>
+            <a onclick="location.href='?do=news_content&id=<?=$new['id'];?>'" style="cursor: pointer;">
+            <div><img src="./img/<?=$new['img'];?>" alt="" width="100%" style="box-shadow: 1px 0 2px;"></div>
+        </a>
+        <a onclick="location.href='?do=news_content&id=<?=$new['id'];?>'" style="cursor: pointer;">
+            <div><h3 class="mt-3" style="font-weight: 700;padding-bottom:10px;border-bottom:1px solid #1f1f1f" ><?=$new['title'];?></h3></div>
+        </a>
+        <a onclick="location.href='?do=news_content&id=<?=$new['id'];?>'" style="cursor: pointer;">
             <div><p class="mt-3"><?=$new['news'];?></p></div>
+        </a>
         </article>
         <?php
         }
