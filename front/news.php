@@ -10,7 +10,7 @@
         $pages=ceil($total/$div);
         $now=$_GET['p']??1;
         $start=($now-1)*$div;
-        $news=$News->all(" where `sh`=1 order by id desc limit $start,$div");
+        $news=$News->all(" where `sh`=1 order by rank desc limit $start,$div");
         foreach($news as $new){
     ?>
         <article style="width: 30%;margin-bottom:20px">
