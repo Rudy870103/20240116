@@ -23,7 +23,7 @@
         font-size: 18px;
         border: none;
         outline: none;
-        background-color: rgb(105, 105, 105,0.8) ;
+        background-color: rgb(105, 105, 105, 0.8);
         color: white;
         cursor: pointer;
         padding: 15px;
@@ -70,12 +70,20 @@
                 <span><?php $motto = $Motto->find(['sh' => 1]);
                         echo $motto['text']; ?></span>
             </div>
-            <div class="header-main" style="display: flex;justify-content: space-between; border-top: 1px solid black;border-bottom: 1px solid black;  margin-top: 8px;padding: 20px 0;">
-                <a href="./index.php" style="text-decoration: none;"><img src="./icon/logo.png" alt="AniMate" width="210" height="100%"><span style="font-size: 60px; color:#1f1f1f">Animate</span></a>
-                <div class="header-info" style="display: flex;border-left: 1px solid black;padding-left: 20px;">
-                    <a href="#" class="text-decoration-none"><span>快來感受貓咪的吸引力</span></a>
+            <div class="header-main" style="height:20vh;display: flex;justify-content: space-between; border-top: 1px solid black;border-bottom: 1px solid black;  margin-top: 8px;padding: 20px 0;overflow:hidden">
+                <div>
+                    <a href="./index.php" style="text-decoration: none;"><img src="./icon/logo.png" alt="AniMate" width="210" height="100%"></a>
+                </div>
+
+                <div class="header-info d-flex" style="border-left:1px solid #1f1f1f;padding-left:20px;">                    
+                    <div class="header-info-issue">
+                        <a href="?do=animate" class="text-decoration-none text-start" style="color:#1f1f1f;">快來看看這個網站最大賣點 >></a>
+                    </div>
+                    <div class="box" style="width: 250px;height:100px"></div>
                     <div class="header-info-date">
-                        2024/01/14
+                        <span style="font-size: 20px;font-family:serif;font-weight:700;position:absolute;right:21%;top:17%"><?= date('Y', strtotime('today')); ?></span>
+                        <span style="font-size: 50px;font-family:serif;font-weight:700;position:absolute;right:20%;top:23%"><?= date('M', strtotime('today')); ?></span>
+                        <span style="font-size: 135px;font-family:serif;font-weight:700;position:absolute;right:11%;top:10%"><?= date('d', strtotime('today')); ?></span>
                     </div>
                 </div>
             </div>
@@ -130,14 +138,14 @@
                                 }
                                 ?>
                             </div>
-    
+
                         <?php
                         }
                         ?>
                     </div>
                 </div>
             </nav>
-<!-- navbar end -->
+            <!-- navbar end -->
 
         </header>
         <!-- header end -->
