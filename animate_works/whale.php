@@ -1,5 +1,6 @@
 <style>
     .whale-content {
+        margin: auto;
         width: 1152px;
         height: 480px;
         background-image: url(../animate_works/bg/whale-01.jpg);
