@@ -72,10 +72,13 @@
             </div>
             <div class="header-main" style="height:20vh;display: flex;justify-content: space-between; border-top: 1px solid black;border-bottom: 1px solid black;  margin-top: 8px;padding: 20px 0;overflow:hidden">
                 <div>
-                    <a href="./index.php" style="text-decoration: none;"><img src="./icon/logo.png" alt="AniMate" width="210" height="100%"></a>
+                    <a href="./index.php" ><img src="./icon/logo.png" alt="AniMate" height="100%"></a>
+                </div>
+                <div>
+                    <a href="./index.php" style="text-decoration: none;color:#1f1f1f"><h1 style="font-size:90px;font-weight:700">AniMate</h1></a>
                 </div>
 
-                <div class="header-info d-flex" style="border-left:1px solid #1f1f1f;padding-left:20px;">                    
+                <div class="header-info d-flex" style="border-left:1px solid #1f1f1f;padding-left:20px;">
                     <div class="header-info-issue">
                         <a href="?do=animate" class="text-decoration-none text-start" style="color:#1f1f1f;">快來看看這個網站最大賣點 >></a>
                     </div>
@@ -116,30 +119,30 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="login" >
-                    <?php
-                    if (!isset($_SESSION['user'])) {
-                    ?>
-                        <a href="?do=login" class="d-flex justify-content-end text-decoration-none" style="width:250px"><img src="./icon/login.png" alt="login" width="20px" height="100%">
-                            <span>&nbsp Login</span></a>
-                    <?php
-                    } else {
-                    ?>
-                    <div class="d-flex justify-content-end" style="width:250px">
-                        歡迎,<?= $_SESSION['user']; ?>&nbsp
-                        <button class="login-btn" onclick="location.href='./api/logout.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">登出</button>
+                    <div class="login">
                         <?php
-                        if ($_SESSION['user'] == 'admin') {
+                        if (!isset($_SESSION['user'])) {
                         ?>
-                            <button class="login-btn" onclick="location.href='back.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">管理</button>
-                    <?php
+                            <a href="?do=login" class="d-flex justify-content-end text-decoration-none" style="width:250px"><img src="./icon/login.png" alt="login" width="20px" height="100%">
+                                <span>&nbsp Login</span></a>
+                        <?php
+                        } else {
+                        ?>
+                            <div class="d-flex justify-content-end" style="width:250px">
+                                歡迎,<?= $_SESSION['user']; ?>&nbsp
+                                <button class="login-btn" onclick="location.href='./api/logout.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">登出</button>
+                                <?php
+                                if ($_SESSION['user'] == 'admin') {
+                                ?>
+                                    <button class="login-btn" onclick="location.href='back.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">管理</button>
+                                <?php
+                                }
+                                ?>
+                            </div>
+
+                        <?php
                         }
                         ?>
-                    </div>
-                        
-                        <?php
-                    }
-                    ?>
                     </div>
                 </div>
             </nav>

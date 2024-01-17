@@ -1,6 +1,6 @@
 <style>
     .logo {
-        background-image: url(./icon/logo.png);
+        background-image: url(./icon/logo_animate.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -39,4 +39,7 @@
         </div>
 
     </article>
+    <!-- <article style="width: 80%;margin:auto">
+    <p>其實這個主題，是從一堂學習illustor的基礎課程開始的</p>
+    </article> -->
 </main>
