@@ -71,21 +71,29 @@
                         echo $motto['text']; ?></span>
             </div>
             <div class="header-main" style="height:20vh;display: flex;justify-content: space-between; border-top: 1px solid black;border-bottom: 1px solid black;  margin-top: 8px;padding: 20px 0;overflow:hidden">
-                <div>
-                    <a href="./index.php" style="text-decoration: none;"><img src="./icon/logo.png" alt="AniMate" height="100%"></a>
+                <div class="d-flex justify-content-center">
+                    <div>
+                        <a href="./index.php"><img src="./icon/logo.png" alt="AniMate" height="100%"></a>
+                    </div>
+                    <div>
+                        <a href="./index.php" style="text-decoration: none;color:#1f1f1f">
+                            <h1 style="font-size:90px;font-weight:700;margin-left:10px;padding-top:10px">AniMate</h1>
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <a href="./index.php" style="text-decoration: none;color:#1f1f1f"><h1 style="font-size:90px;font-weight:700">AniMate</h1></a>
-                </div>
+
+
                 <div class="header-info d-flex" style="border-left:1px solid #1f1f1f;padding-left:20px;">
                     <div class="header-info-issue">
                         <a href="?do=animate" class="text-decoration-none text-start" style="color:#1f1f1f;">快來看看這個網站最大賣點 >></a>
                     </div>
-                    <div class="box" style="width: 250px;height:100px"></div>
-                    <div class="header-info-date">
-                        <span style="font-size: 20px;font-family:serif;font-weight:700;position:absolute;right:21%;top:17%"><?= date('Y', strtotime('today')); ?></span>
-                        <span style="font-size: 50px;font-family:serif;font-weight:700;position:absolute;right:20%;top:23%"><?= date('M', strtotime('today')); ?></span>
-                        <span style="font-size: 135px;font-family:serif;font-weight:700;position:absolute;right:11%;top:10%"><?= date('d', strtotime('today')); ?></span>
+
+                    <div class="header-info-date d-flex justify-content-center align-items-center" style="">
+                        <div class="d-flex flex-column align-items-end" style="margin-right:15px">
+                            <span style="font-size: 20px;font-family:serif;font-weight:700;padding-top:15px;"><?= date('Y', strtotime('today')); ?></span>
+                            <span style="font-size: 50px;font-family:serif;font-weight:700;"><?= date('M', strtotime('today')); ?></span>
+                        </div>
+                        <span style="font-size: 135px;font-family:serif;font-weight:700;"><?= date('d', strtotime('today')); ?></span>
                     </div>
                 </div>
             </div>

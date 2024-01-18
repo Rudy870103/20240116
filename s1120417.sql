@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
--- 主機： 127.0.0.1
--- 產生時間： 2024-01-17 21:30:02
--- 伺服器版本： 10.4.28-MariaDB
--- PHP 版本： 8.2.4
+-- 主機： localhost
+-- 產生時間： 2024 年 01 月 18 日 02:43
+-- 伺服器版本： 10.3.38-MariaDB-0ubuntu0.20.04.1
+-- PHP 版本： 7.4.3-4ubuntu2.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- 資料庫： `animate`
+-- 資料庫： `s1120417`
 --
 
 -- --------------------------------------------------------
@@ -93,7 +93,8 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `acc`, `pw`, `email`) VALUES
 (1, 'admin', '1234', 'favoriteinfinite@gmail.com'),
-(2, 'rudy', '0103', 'favoriteinfinite@gmail.com');
+(2, 'rudy', '0103', 'favoriteinfinite@gmail.com'),
+(4, 'Rudyisthebest', 'poyagoodgood', 'ctrpoya@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -114,23 +115,23 @@ CREATE TABLE `vote` (
 --
 
 INSERT INTO `vote` (`id`, `text`, `voteImg`, `vote`, `title_id`) VALUES
-(96, '新動物選拔', '', 1, 0),
+(96, '新動物選拔', '', 2, 0),
 (97, '蝴蝶', '', 0, 96),
-(98, '鯨魚', '', 1, 96),
+(98, '鯨魚', '', 2, 96),
 (99, '企鵝', '', 0, 96),
 (100, '', 'butterfly.png', 0, 96),
 (101, '', 'whale.png', 0, 96),
 (102, '', 'penguin.png', 0, 96),
-(103, '新動物選拔3', '', 1, 0),
+(103, '新動物選拔3', '', 2, 0),
 (104, '猩猩', '', 0, 103),
 (105, '公雞', '', 1, 103),
-(106, '松鼠', '', 0, 103),
+(106, '松鼠', '', 1, 103),
 (107, '', 'kingkong.png', 0, 103),
 (108, '', 'chicken.png', 0, 103),
 (109, '', 'squirrel.png', 0, 103),
-(110, '動物選拔4', '', 1, 0),
+(110, '動物選拔4', '', 2, 0),
 (111, '鳥', '', 0, 110),
-(112, '羊', '', 0, 110),
+(112, '羊', '', 1, 110),
 (113, '蝙蝠', '', 1, 110),
 (114, '', 'bird.png', 0, 110),
 (115, '', 'goat.png', 0, 110),
@@ -172,7 +173,7 @@ ALTER TABLE `news`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `vote`
