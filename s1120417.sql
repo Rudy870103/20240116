@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2024-01-18 08:15:11
+-- 產生時間： 2024-01-18 09:36:57
 -- 伺服器版本： 10.4.28-MariaDB
 -- PHP 版本： 8.2.4
 
@@ -39,7 +39,8 @@ CREATE TABLE `message` (
 --
 
 INSERT INTO `message` (`id`, `date`, `nickname`, `text`) VALUES
-(10, '2024-01-18 | 11:51:30', 'rudy', '成功成功!!!去吃飯');
+(10, '2024-01-18 | 11:51:30', 'rudy', '成功成功!!!去吃飯'),
+(11, '2024-01-18 | 15:58:08', '該早點做的', '下次別拖了');
 
 -- --------------------------------------------------------
 
@@ -58,8 +59,8 @@ CREATE TABLE `motto` (
 --
 
 INSERT INTO `motto` (`id`, `text`, `sh`) VALUES
-(1, '勇敢並不是什麼都不怕，而是即使恐懼，仍勇往直前', '0'),
-(2, '不要怕測試，與出錯混熟', '1'),
+(1, '勇敢並不是什麼都不怕，而是即使恐懼，仍勇往直前', '1'),
+(2, '不要怕測試，與出錯混熟', '0'),
 (3, '看破不說破', '0'),
 (6, '2024/01/18-作業deadline', '0');
 
@@ -91,8 +92,8 @@ INSERT INTO `news` (`id`, `img`, `title`, `news`, `sh`, `rank`) VALUES
 (24, 'DSC_6278.JPG', '睏嘎安內', '奪愛睡', 1, 24),
 (25, 'DSC_4644.JPG', '忙碌的背影', '始終迷人', 1, 25),
 (26, 'DSC_4640.JPG', '萬紫叢中一點黃', '神作啊(自己說', 1, 26),
-(27, '202154_210504_1.jpg', '就你這個好奇寶寶', '「在幹嘛?」', 1, 28),
-(28, '202154_210504_8.jpg', '有著成熟眼神的你', '總是這樣看著遠方', 1, 27);
+(28, '202154_210504_8.jpg', '有著成熟眼神的你', '總是這樣看著遠方', 1, 27),
+(29, '202154_210504_1.jpg', '就你最好奇', '「在幹嘛」?', 1, 29);
 
 -- --------------------------------------------------------
 
@@ -135,8 +136,8 @@ CREATE TABLE `vote` (
 --
 
 INSERT INTO `vote` (`id`, `text`, `voteImg`, `vote`, `title_id`) VALUES
-(96, '新動物選拔', '', 2, 0),
-(97, '蝴蝶', '', 0, 96),
+(96, '新動物選拔', '', 4, 0),
+(97, '蝴蝶', '', 1, 96),
 (98, '鯨魚', '', 2, 96),
 (99, '企鵝', '', 0, 96),
 (100, '', 'butterfly.png', 0, 96),
@@ -193,13 +194,13 @@ ALTER TABLE `vote`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `message`
 --
 ALTER TABLE `message`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `user`
@@ -211,7 +212,7 @@ ALTER TABLE `user`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `vote`
 --
 ALTER TABLE `vote`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=118;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
