@@ -88,7 +88,7 @@
                         <a href="?do=animate" class="text-decoration-none text-start" style="color:#1f1f1f;">快來看看這個網站最大賣點 >></a>
                     </div>
 
-                    <div class="header-info-date d-flex justify-content-center align-items-center" style="">
+                    <div class="header-info-date d-flex justify-content-center align-items-center">
                         <div class="d-flex flex-column align-items-end" style="margin-right:15px">
                             <span style="font-size: 20px;font-family:serif;font-weight:700;padding-top:15px;"><?= date('Y', strtotime('today')); ?></span>
                             <span style="font-size: 50px;font-family:serif;font-weight:700;"><?= date('M', strtotime('today')); ?></span>
@@ -123,6 +123,9 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="?do=vote">主題票選</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="?do=message">留言區</a>
                             </li>
                         </ul>
                     </div>

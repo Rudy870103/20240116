@@ -145,6 +145,7 @@ $User=new DB('user');
 $Motto=new DB('motto');
 $News=new DB('news');
 $Vote=new DB('vote');
+$Message=new DB('message');
 
 
 
