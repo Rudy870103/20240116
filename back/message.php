@@ -1,4 +1,4 @@
-<h1 class="text-center mt-5">留言板</h1>
+<h1 class="text-center mt-5" style="font-weight: 700;">留言板</h1>
 
 
 

@@ -24,6 +24,7 @@ header {
 
 .login a {
     color: #1f1f1f;
+    font-family: 'Noto Serif TC', serif;
 }
 
 .login a:hover {

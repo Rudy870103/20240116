@@ -1,4 +1,4 @@
-<h1 class="text-center mt-5">主題票選管理</h1>
+<h1 class="text-center mt-5" style="font-weight: 700;">主題票選管理</h1>
 
 <div class="mt-5 mx-auto" style="border: 1px solid #1f1f1f;width:50%;">
     <h2 class="text-center mt-5">新增問題</h2>

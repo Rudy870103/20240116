@@ -11,6 +11,12 @@
     <script src="./js/jquery-1.9.1min.js"></script>
     <script src="./js/js.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+        <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- google font -->
     <title>AniMate</title>
 </head>
 
@@ -63,9 +69,9 @@
         }
     </script>
     <!-- go to top button end -->
-    <div class="container-fluid">
+    <div class="container-fluid" style="font-family: 'Noto Serif TC', serif;">
         <!-- header -->
-        <header>
+        <header style="font-family: 'Noto Serif TC', serif;">
             <div class="header-motto" style="border-bottom: 2px solid black; padding-bottom: 8px;font-size: 16px;">
                 <span><?php $motto = $Motto->find(['sh' => 1]);
                         echo $motto['text']; ?></span>
@@ -102,7 +108,7 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-family: 'Noto Serif TC', serif;font-weight:700">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link" href="?do=admin">會員管理</a>
@@ -134,7 +140,7 @@
                     <?php
                     } else {
                     ?>
-                        <div class="d-flex justify-content-end" style="width:250px">
+                        <div class="d-flex justify-content-end" style="width:250px; font-family: 'Noto Serif TC', serif;font-weight:700">
                             歡迎,<?= $_SESSION['user']; ?>&nbsp
                             <button class="login-btn" onclick="location.href='./api/logout.php'" style="margin-left: 10px;border-radius:10%;background-color:#f8f8f8;border:1px solid #1f1f1f">登出</button>
                             <?php

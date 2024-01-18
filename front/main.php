@@ -41,13 +41,13 @@
     </section>
     <!-- carousel end -->
     <section style="padding-bottom:60px;margin-bottom:60px;border-bottom:1px solid #1f1f1f">
-        <h1 style="text-align: center;font-weight:700;margin-bottom:30px;">有趣的動畫作品</h1>
+        <h1 style="text-align: center;font-weight:700;margin-bottom:30px;font-family: 'Noto Serif TC', serif;">有趣的動畫作品</h1>
         <div style="margin:auto">
             <?php include "./animate_works/whale.php"; ?>
         </div>
     </section>
     <section style="padding-bottom:60px;margin-bottom:60px;border-bottom:1px solid #1f1f1f">
-        <h1 style="text-align: center;font-weight:700;margin-bottom:30px;">動人的日常撮影</h1>
+        <h1 style="text-align: center;font-weight:700;margin-bottom:30px;font-family: 'Noto Serif TC', serif;">動人的日常撮影</h1>
         <div class="news-list d-flex flex-wrap" style="column-gap:5%">
             <?php
             $news = $News->all(" where `sh`=1 order by rank desc limit 3");

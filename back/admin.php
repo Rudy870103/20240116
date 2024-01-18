@@ -1,4 +1,4 @@
-<h1 class="text-center mt-5">帳號管理</h1>
+<h1 class="text-center mt-5" style="font-weight: 700;">帳號管理</h1>
 <form action="./api/edit_user.php" method="post">
     <table class="mt-5 text-center" style="width:50%;margin:auto;border:1px solid #1f1f1f;">
         <tr style="border: 1px solid #1f1f1f;height:40px">
