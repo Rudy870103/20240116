@@ -3,7 +3,7 @@
         background-image: url(./icon/logo_animate.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
+        /* background-size: contain; */
         position: relative;
         overflow: hidden;
     }
