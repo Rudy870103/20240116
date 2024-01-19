@@ -31,35 +31,24 @@
 
 
 <script>
-    /**
-     * 登入函式
-     */
     function login() {
-        // 取得帳號輸入框的值
         let acc = $("#acc").val()
-        // 取得密碼輸入框的值
         let pw = $("#pw").val()
-        // 發送 POST 請求到 chk_acc.php 檢查帳號是否存在
         $.post('./api/chk_acc.php', {
             acc
         }, (res) => {
-            // 如果回傳的結果為 0，表示查無帳號
             if (parseInt(res) == 0) {
                 alert("查無帳號")
             } else {
-                // 發送 POST 請求到 chk_pw.php 檢查帳號密碼是否正確
                 $.post('./api/chk_pw.php', {
                     acc,
                     pw
                 }, (res) => {
-                    // 如果回傳的結果為 1，表示密碼正確
                     if (parseInt(res) == 1) {
-                        // 如果帳號為 'admin'，導向後台頁面
                         if ($("#acc").val() == 'admin') {
                             location.href = 'index.php'
                             alert('管理者登入成功');
                         } else {
-                            // 否則導向首頁
                             location.href = 'index.php';
                             alert('登入成功');
 

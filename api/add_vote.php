@@ -2,7 +2,7 @@
 include_once "db.php";
 
 if (isset($_POST['voteTitle'])) {
-    $Vote->save(['text'=>$_POST['voteTitle'], 'title_id'=>0, 'vote'=>0]);
+    $Vote->save(['text'=>$_POST['voteTitle'], 'title_id'=>0, 'vote'=>0, 'sh'=>1]);
     $title_id = $Vote->find(['text'=>$_POST['voteTitle']])['id'];
 }
 

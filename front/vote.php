@@ -13,7 +13,7 @@
         <th width="10%">狀態</th>
     </tr>
     <?php
-    $vote=$Vote->all(['title_id'=>0]);
+    $vote=$Vote->all(['title_id'=>0,'sh'=>1]);
     foreach($vote as  $key => $vot){
     ?>
     <style>

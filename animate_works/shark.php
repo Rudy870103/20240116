@@ -3,7 +3,7 @@
         margin: auto;
         width: 1152px;
         height: 480px;
-        background-image: url(../animate_works/bg/shark-03.jpg);
+        background-image: url(./animate_works/bg/shark-03.jpg);
         background-size: cover;
         position: relative;
     }
@@ -14,13 +14,13 @@
         top: 1px;
         width: 700px;
         height: 480px;
-        background-image: url(../animate_works/animal/shark.png);
+        background-image: url(./animate_works/animal/shark.png);
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .shark-box:hover {
-        background-image: url(../animate_works/animate/shark.gif);
+        background-image: url(./animate_works/animate/shark.gif);
     }
 
     .shark-left {
@@ -36,7 +36,7 @@
         <div class="shark-content">
             <div class="shark-box"></div>
             <div class="shark-left">
-                <img src="../animate_works/cover/left3-03.png" alt="" width="100%">
+                <img src="./animate_works/cover/left3-03.png" alt="" width="100%">
             </div>
         </div>
 

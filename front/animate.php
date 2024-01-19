@@ -46,13 +46,122 @@
             <div>
                 <?php include "./animate_works/shark.php"; ?>
             </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/turtle.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/dolphin.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/seahorse.php"; ?>
+            </div>
         </div>
-        <div class="tab-pane fade" id="ice" role="tabpanel" aria-labelledby="ice-tab">...</div>
-        <div class="tab-pane fade" id="wild" role="tabpanel" aria-labelledby="wild-tab">...</div>
-        <div class="tab-pane fade" id="cave" role="tabpanel" aria-labelledby="cave-tab">...</div>
-        <div class="tab-pane fade" id="plant" role="tabpanel" aria-labelledby="plant-tab">...</div>
-        <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-        <div class="tab-pane fade" id="woods" role="tabpanel" aria-labelledby="woods-tab">...</div>
-        <div class="tab-pane fade" id="lake" role="tabpanel" aria-labelledby="lake-tab">...</div>
+        <div class="tab-pane fade" id="ice" role="tabpanel" aria-labelledby="ice-tab">
+            <div>
+                <?php include "./animate_works/polarbear.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/penguin.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/walrus.php"; ?>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="wild" role="tabpanel" aria-labelledby="wild-tab">
+            <div>
+                <?php include "./animate_works/rhino.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/goat.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/elephant.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/kangaroo.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/zebra.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/rabbit.php"; ?>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="cave" role="tabpanel" aria-labelledby="cave-tab">
+            <div>
+                <?php include "./animate_works/bat.php"; ?>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="plant" role="tabpanel" aria-labelledby="plant-tab">
+            <div>
+                <?php include "./animate_works/butterfly.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/parrot.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/squirrel.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/chameleon.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/bird.php"; ?>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div>
+                <?php include "./animate_works/chicken.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/cat.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/dog.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/rat.php"; ?>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="woods" role="tabpanel" aria-labelledby="woods-tab">
+            <div>
+                <?php include "./animate_works/gorilla.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/owl.php"; ?>
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="lake" role="tabpanel" aria-labelledby="lake-tab">
+            <div>
+                <?php include "./animate_works/goose.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/hippo.php"; ?>
+            </div>
+            <br><br><br><br>
+            <div>
+                <?php include "./animate_works/flamingo.php"; ?>
+            </div>
+        </div>
     </div>
 </div>

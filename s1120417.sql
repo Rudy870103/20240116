@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2024-01-18 09:36:57
+-- 產生時間： 2024-01-19 08:35:43
 -- 伺服器版本： 10.4.28-MariaDB
 -- PHP 版本： 8.2.4
 
@@ -128,35 +128,40 @@ CREATE TABLE `vote` (
   `text` text NOT NULL,
   `voteImg` text NOT NULL,
   `vote` int(10) NOT NULL,
-  `title_id` int(10) NOT NULL
+  `title_id` int(10) NOT NULL,
+  `sh` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- 傾印資料表的資料 `vote`
 --
 
-INSERT INTO `vote` (`id`, `text`, `voteImg`, `vote`, `title_id`) VALUES
-(96, '新動物選拔', '', 4, 0),
-(97, '蝴蝶', '', 1, 96),
-(98, '鯨魚', '', 2, 96),
-(99, '企鵝', '', 0, 96),
-(100, '', 'butterfly.png', 0, 96),
-(101, '', 'whale.png', 0, 96),
-(102, '', 'penguin.png', 0, 96),
-(103, '新動物選拔3', '', 2, 0),
-(104, '猩猩', '', 0, 103),
-(105, '公雞', '', 1, 103),
-(106, '松鼠', '', 1, 103),
-(107, '', 'kingkong.png', 0, 103),
-(108, '', 'chicken.png', 0, 103),
-(109, '', 'squirrel.png', 0, 103),
-(110, '動物選拔4', '', 2, 0),
-(111, '鳥', '', 0, 110),
-(112, '羊', '', 1, 110),
-(113, '蝙蝠', '', 1, 110),
-(114, '', 'bird.png', 0, 110),
-(115, '', 'goat.png', 0, 110),
-(116, '', 'bat.png', 0, 110);
+INSERT INTO `vote` (`id`, `text`, `voteImg`, `vote`, `title_id`, `sh`) VALUES
+(96, '新動物選拔', '', 4, 0, '1'),
+(97, '蝴蝶', '', 1, 96, ''),
+(98, '鯨魚', '', 2, 96, ''),
+(99, '企鵝', '', 0, 96, ''),
+(100, '', 'butterfly.png', 0, 96, ''),
+(101, '', 'whale.png', 0, 96, ''),
+(102, '', 'penguin.png', 0, 96, ''),
+(103, '新動物選拔3', '', 2, 0, '1'),
+(104, '猩猩', '', 0, 103, ''),
+(105, '公雞', '', 1, 103, ''),
+(106, '松鼠', '', 1, 103, ''),
+(107, '', 'kingkong.png', 0, 103, ''),
+(108, '', 'chicken.png', 0, 103, ''),
+(109, '', 'squirrel.png', 0, 103, ''),
+(110, '動物選拔4', '', 2, 0, '1'),
+(111, '鳥', '', 0, 110, ''),
+(112, '羊', '', 1, 110, ''),
+(113, '蝙蝠', '', 1, 110, ''),
+(114, '', 'bird.png', 0, 110, ''),
+(115, '', 'goat.png', 0, 110, ''),
+(116, '', 'bat.png', 0, 110, ''),
+(119, '鯨魚', '', 0, 118, ''),
+(120, '松鼠', '', 0, 118, ''),
+(121, '', 'bg4.jpg', 0, 118, ''),
+(122, '', 'bg3.jpg', 0, 118, '');
 
 --
 -- 已傾印資料表的索引
@@ -212,7 +217,7 @@ ALTER TABLE `user`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `vote`
 --
 ALTER TABLE `vote`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=118;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
