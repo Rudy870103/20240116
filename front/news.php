@@ -21,7 +21,7 @@
             <div><h3 class="mt-3" style="font-weight: 700;padding-bottom:10px;border-bottom:1px solid #1f1f1f" ><?=$new['title'];?></h3></div>
         </a>
         <a onclick="location.href='?do=news_content&id=<?=$new['id'];?>'" style="cursor: pointer;">
-            <div><p class="mt-3"><?=$new['news'];?></p></div>
+            <div><p class="mt-3"><?=mb_substr($new['news'],0,25);?></p></div>
         </a>
         </article>
         <?php
