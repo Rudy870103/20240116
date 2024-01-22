@@ -2,26 +2,24 @@
 <h1 style="text-align: center;font-weight:700">會員登入<span style="display: block;font-size:16px;margin-top:10px">Login</span></h1>
 </header>
 <div>
-    <table style="margin: auto;padding: 80px 0;">
+    <table style="margin: auto;">
         <tr>
-            <td class="text-end">帳號 : &nbsp</td>
+            <td class="text-end" style="width: 15%;">帳號 : &nbsp</td>
             <td><input type="text" name="acc" id="acc" style="background-color:#f8f8f8 !important;border:1px solid #1f1f1f"></td>
         </tr>
         <tr>
-            <td class="text-end">密碼 : &nbsp</td>
+            <td class="text-end" style="width: 15%;">密碼 : &nbsp</td>
             <td><input type="password" name="pw" id="pw" style="background-color:#f8f8f8;border:1px solid #1f1f1f"></td>
         </tr>
         <tr>
-            <td></td>
-            <td class="text-center">
+            <td colspan="2" class="text-center">
                 <br>
                 <input class="login-btn" type="button" value="登入" onclick="login()">
                 <input class="login-btn" type="reset" value="清除" onclick="clean()">
             </td>
         </tr>
         <tr>
-            <td></td>
-            <td class="text-center">
+            <td colspan="2" class="text-center">
                 <br>
                 <a href="?do=forget" class="forget">忘記密碼</a> | <a href="?do=reg" class="forget">尚未註冊</a>
             </td>
