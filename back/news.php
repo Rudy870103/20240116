@@ -77,13 +77,17 @@
         location.href = `?do=edit_news&id=${id}`;
     })
     $(".del-btn").on("click", function() {
-        let id = $(this).data('id');
-        $.post("./api/del_news.php", {
-            id,
-            table: 'news'
-        }, () => {
-            location.reload();
-        })
+        let check=confirm('確定要刪除篇文章嗎?');
+        if(check){
+            let id = $(this).data('id');
+            $.post("./api/del_news.php", {
+                id,
+                table: 'news'
+            }, () => {
+                location.reload();
+            })
+        }
+        
     })
     $(".sw-btn").on("click", function() {
         let id = $(this).data('id');
