@@ -43,7 +43,7 @@
     .sticky {
         position: fixed;
         top: 0;
-        width: 100%;
+        width: 79%;
         z-index: 999;
     }
 </style>
