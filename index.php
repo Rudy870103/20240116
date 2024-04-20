@@ -39,6 +39,13 @@
     #myBtn:hover {
         background-color: #555;
     }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+    }
 </style>
 
 <bod style="font-family: 'Noto Serif TC', serif;">
@@ -105,7 +112,7 @@
             </div>
 
             <!-- navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: 1px solid black;padding: 1px 0;">
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: 1px solid black;padding: 1px 0;">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -162,6 +169,22 @@
                     </div>
                 </div>
             </nav>
+
+            <script>
+                let navbar = $("#navbar");
+                let sticky = navbar.offset().top;
+                navbar.removeClass("sticky");
+                $(document).ready(function() {
+                    $(window).scroll(function() {
+                    
+                        if (window.pageYOffset >= sticky) {
+                            navbar.addClass("sticky");
+                        } else {
+                            navbar.removeClass("sticky");
+                        }
+                    });
+                });
+            </script>
             <!-- navbar end -->
 
         </header>
@@ -196,6 +219,6 @@
 
 
     <script></script>
-</body>
+    </body>
 
 </html>
