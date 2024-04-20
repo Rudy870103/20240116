@@ -45,6 +45,7 @@
         top: 0;
         width: 79%;
         z-index: 999;
+        background-color: rgb(248,248,248,0.9) !important;
     }
 </style>
 
